@@ -5,8 +5,8 @@ import gradio as gr
 from dotenv import load_dotenv
 from langchain_chroma import Chroma
 from langchain_community.document_loaders import PyPDFLoader, TextLoader
+from langchain_community.embeddings import FastEmbedEmbeddings
 from langchain_groq import ChatGroq
-from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 load_dotenv()
@@ -41,7 +41,7 @@ def build_vectorstore():
         )
     splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=100)
     chunks = splitter.split_documents(documents)
-    embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
+    embeddings = FastEmbedEmbeddings(model_name=EMBEDDING_MODEL)
     return Chroma.from_documents(chunks, embeddings)
 
 
