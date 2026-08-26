@@ -12,7 +12,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 load_dotenv()
 
 DATA_DIR = Path(__file__).parent / "data"
-GROQ_MODEL = "llama-3.1-8b-instant"
+GROQ_MODEL = "openai/gpt-oss-20b"
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 SYSTEM_PROMPT = (
