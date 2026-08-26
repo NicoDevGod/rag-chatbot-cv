@@ -1,0 +1,14 @@
+# environment variables
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Chroma persisted data (rebuilt at startup from data/)
+chroma_db/
+
+# OS
+.DS_Store
