@@ -3,7 +3,7 @@
 A retrieval-augmented generation (RAG) chatbot that answers questions about Nicolas's
 background, work experience and projects, grounded in the documents in [`data/`](data/).
 
-- **LLM**: [Groq](https://groq.com) (`llama-3.1-8b-instant`, free tier)
+- **LLM**: [Groq](https://groq.com) (`openai/gpt-oss-20b`, free tier)
 - **Embeddings**: `sentence-transformers/all-MiniLM-L6-v2` (runs locally, no API key)
 - **Vector store**: [Chroma](https://www.trychroma.com/) (in-memory, rebuilt on startup)
 - **UI**: [Gradio](https://www.gradio.app/)
@@ -38,12 +38,19 @@ background, work experience and projects, grounded in the documents in [`data/`]
 Drop `.md`, `.txt` or `.pdf` files into [`data/`](data/) — they're automatically loaded,
 chunked and embedded on startup. No code changes needed.
 
-## Deploying to Hugging Face Spaces
+## Deploying to Render
 
-1. Create a new Space at https://huggingface.co/new-space — SDK: **Gradio**, hardware: **CPU basic (free)**.
-2. Push this repo's contents to the Space's git remote (Spaces are git repos).
-3. In the Space's **Settings → Repository secrets**, add `GROQ_API_KEY` with your key.
-4. The Space builds automatically from `requirements.txt` and runs `app.py`.
+This repo includes a [`render.yaml`](render.yaml) Blueprint, so Render can configure
+everything automatically:
 
-Once it's live, the Space URL (`https://huggingface.co/spaces/<user>/<space-name>`) is
-the link to use in the portfolio.
+1. Sign in at https://dashboard.render.com (GitHub login works well).
+2. **New → Blueprint**, pick this repo. Render reads `render.yaml` and proposes a
+   free web service named `rag-chatbot-cv`.
+3. When prompted for the `GROQ_API_KEY` environment variable, paste your key.
+4. Deploy. The first build takes a few minutes (installing `torch`, `transformers`, etc.).
+
+Render's free tier sleeps the service after 15 minutes of inactivity — the next visit
+takes 30-60s to wake up, then responds normally.
+
+Once it's live, the service URL (`https://rag-chatbot-cv-xxxx.onrender.com`) is the
+link to use in the portfolio.
