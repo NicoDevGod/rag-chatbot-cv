@@ -8,8 +8,8 @@ background, work experience and projects, grounded in the documents in [`data/`]
 - **Vector store**: [Chroma](https://www.trychroma.com/) (in-memory, rebuilt on startup)
 - **UI**: [Gradio](https://www.gradio.app/)
 
-New to RAG? [`docs/HOW_IT_WORKS.md`](docs/HOW_IT_WORKS.md) walks through `app.py`
-step by step — what each part does and why.
+New to RAG? [`docs/HOW_IT_WORKS.md`](docs/HOW_IT_WORKS.md) (in Spanish) walks through
+`app.py` step by step — what each part does and why.
 
 ## Local setup
 
