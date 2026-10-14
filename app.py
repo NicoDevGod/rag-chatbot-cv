@@ -61,13 +61,33 @@ def build_chain():
     return retriever, llm
 
 
+def normalize_history(history):
+    """Gradio hands over history in two shapes: {"role", "content"} dicts from the web
+    UI, but [user, assistant] pairs from the /chat API route (a Gradio 5.7 quirk).
+    LangChain reads a pair as (message_type, content) and rejects it, so accept both
+    and pass the LLM only clean role/content messages."""
+    messages = []
+    for item in history or []:
+        if isinstance(item, dict):
+            role, content = item.get("role"), item.get("content")
+            if role in ("user", "assistant") and isinstance(content, str):
+                messages.append({"role": role, "content": content})
+        elif isinstance(item, (list, tuple)) and len(item) == 2:
+            user, assistant = item
+            if isinstance(user, str) and user:
+                messages.append({"role": "user", "content": user})
+            if isinstance(assistant, str) and assistant:
+                messages.append({"role": "assistant", "content": assistant})
+    return messages
+
+
 def make_answer_fn(retriever, llm):
     def answer(message, history):
         relevant_docs = retriever.invoke(message)
         context = "\n\n".join(doc.page_content for doc in relevant_docs)
         messages = [
             {"role": "system", "content": SYSTEM_PROMPT.format(context=context)},
-            *history,
+            *normalize_history(history),
             {"role": "user", "content": message},
         ]
         response = llm.invoke(messages)
