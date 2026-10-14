@@ -6,7 +6,7 @@ Technical skills, years of experience: Python 4 years, SQL 4 years, MySQL 4 year
 
 Technical skills, AI: His AI skills include retrieval-augmented generation, embeddings and vector stores, transfer learning, computer vision, function-calling agents, collaborative filtering, LoRA fine-tuning, ONNX export and quantization, and debugging memory problems of deployed ML services. He also has hardware experience: Arduino programming in C++, and a technician's background in electronics.
 
-Technical skills, backend and data: At ABTEC Chile he built backend code with Python (FastAPI), processed large data loads with pandas and worked with PostgreSQL. In earlier roles he built applications in ASP.Net and C#, VBA macros in Excel, and PHP sites. He also maintains Apache systems and handles servers, routers and database changes in IT support work.
+Technical skills, backend and data: At ABTEC Chile he built backend code with Python (FastAPI), processed large data loads with pandas and worked with PostgreSQL. In earlier roles he built applications in ASP.Net and C#, VBA macros in Excel, and PHP sites. He also maintains Apache systems and handles servers, routers, networks and database changes in IT work.
 
 Soft skills: Proactivity, teamwork, critical thinking, a positive attitude, and openness to constructive criticism.
 

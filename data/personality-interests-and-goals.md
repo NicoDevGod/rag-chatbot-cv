@@ -1,6 +1,6 @@
 # Nicolas: personality, interests and career goals
 
-Career goal: Nicolas wants to change his professional direction and specialize in artificial intelligence. He comes from software development and IT support and is building a portfolio of deployed AI projects in Python to move into AI roles. Each project is deployed, measured and documented, including what went wrong.
+Career goal: Nicolas wants to change his professional direction and specialize in artificial intelligence. He works in IT today, comes from software development and is building a portfolio of deployed AI projects in Python to move into AI roles. Each project is deployed, measured and documented, including what went wrong.
 
 Why AI: He describes it as a change of professional direction: he wants to specialize in AI. He learned AI from scratch by himself, and the six deployed projects are his evidence of it.
 

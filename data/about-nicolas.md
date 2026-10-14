@@ -6,10 +6,10 @@ Nicolas Alejandro Angel Robles is a Computer Engineer and a passionate, highly m
 ## Work Experience
 
 ### Currently
-Developing full-stack projects for his portfolio. He is currently working on his potential for the development of digital solutions through the role of Front-End developer.
+Works in IT (Ingeniero en informática) at Uno Limitada (CableColor) in Ovalle, covering development, support, networks and other tasks. He also builds a portfolio of deployed AI projects in Python.
 
-### 2025: IT Engineer (Ingeniero en informática) - Uno Limitada (CableColor), Ovalle
-Provided support for IT equipment such as servers, routers, computers and printers. Also supported the local system that gives customer-service executives the information and tools they need: maintaining Apache systems, reviewing code and making database changes when necessary.
+### 2025 to present: IT Engineer (Ingeniero en informática) - Uno Limitada (CableColor), Ovalle
+Works in IT covering development, support, networks and other tasks. Provides support for IT equipment such as servers, routers, computers and printers. Also supported the local system that gives customer-service executives the information and tools they need: maintaining Apache systems, reviewing code and making database changes when necessary.
 
 ### 2024: Software Developer - ABTEC Chile, Ovalle
 Built, together with the team, the backend of a web application in Python (FastAPI), using axios for the connection and pandas to process the large amounts of data that had to be loaded. Implemented the connections and queries needed to create part of the PostgreSQL database, and contributed to the frontend with code adjustments in React.
@@ -45,5 +45,5 @@ His personal portfolio website, developed with Astro and Tailwind CSS, chosen fo
 
 ## Contact
 - Email: nicoangel421@gmail.com
-- LinkedIn: https://www.linkedin.com/in/nicolas-angel-b140b92a6/
+- LinkedIn: https://www.linkedin.com/in/nicolas-angel-robles-b140b92a6/
 - GitHub: https://github.com/NicoDevGod

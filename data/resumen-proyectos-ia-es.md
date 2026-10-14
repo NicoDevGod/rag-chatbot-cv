@@ -20,7 +20,7 @@ Qué estudió Nicolas (formación y estudios): es Técnico en electrónica, Anal
 
 Proyecto de título de Nicolas y autodidacta: su proyecto de título fue un sistema HelpDesk en ASP.Net y C# para recibir tickets internos sobre problemas en distintas áreas. Aprendió IA desde cero por cuenta propia, principalmente con YouTube, y también aprendió varios lenguajes y Arduino con C++.
 
-Experiencia laboral de Nicolas, dónde ha trabajado (trabajos más recientes): en 2025 fue ingeniero en informática en Uno Limitada (CableColor), dando soporte a servidores, routers y equipos, y manteniendo sistemas Apache y bases de datos. En 2024 fue desarrollador de software en ABTEC Chile: hizo el backend de una aplicación web con Python (FastAPI), usó pandas para procesar grandes volúmenes de datos, trabajó con PostgreSQL y ajustó código en React.
+Experiencia laboral de Nicolas, dónde ha trabajado (trabajos más recientes): desde 2025 es ingeniero en informática en Uno Limitada (CableColor), su trabajo actual, en un rol de TI que cubre desarrollo, soporte, redes y otras tareas: da soporte a servidores, routers y equipos, y mantiene sistemas Apache y bases de datos. En 2024 fue desarrollador de software en ABTEC Chile: hizo el backend de una aplicación web con Python (FastAPI), usó pandas para procesar grandes volúmenes de datos, trabajó con PostgreSQL y ajustó código en React.
 
 Experiencia laboral de Nicolas, dónde ha trabajado (trabajos anteriores): en 2023 fue docente en IP/CFT Santo Tomás Ovalle (programación web, sistemas operativos Windows y Linux, bases de datos) y supervisó alumnos en práctica. En 2020 fue desarrollador en el Hospital de Ovalle (ASP.Net, macros VBA, PHP). En total tiene más de 5 años de experiencia como desarrollador de software.
 

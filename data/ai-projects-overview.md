@@ -6,7 +6,7 @@ AI portfolio, live demos: (1) RAG chatbot https://rag-chatbot-cv-zre6.onrender.c
 
 AI portfolio: Every AI project follows the same cycle: build it, test it locally, publish the code on GitHub (user NicoDevGod), write a step-by-step explanation in docs/HOW_IT_WORKS.md, deploy it on Render's free tier (512 MB of RAM) and verify it against the live server. Each one has a public live demo built with Gradio.
 
-AI portfolio: Nicolas's AI portfolio website is at https://nicodevgod.github.io/ai-portfolio/ (bilingual Spanish and English, with a case study, a live demo and a scaling roadmap for each project). His earlier web development portfolio is at https://porfolionicodev.netlify.app/. Contact details are in his profile: GitHub https://github.com/NicoDevGod and LinkedIn https://www.linkedin.com/in/nicolas-angel-b140b92a6/.
+AI portfolio: Nicolas's AI portfolio website is at https://nicodevgod.github.io/ai-portfolio/ (bilingual Spanish and English, with a case study, a live demo and a scaling roadmap for each project). His earlier web development portfolio is at https://porfolionicodev.netlify.app/. Contact details are in his profile: GitHub https://github.com/NicoDevGod and LinkedIn https://www.linkedin.com/in/nicolas-angel-robles-b140b92a6/.
 
 AI portfolio: Nicolas also wrote a 54-slide study deck (in Spanish) that explains the six projects in depth: architecture, concepts explained from scratch, the real bugs found on the way to production and how they were fixed. It is downloadable from the AI portfolio website.
 
