@@ -63,9 +63,10 @@ Writing tips that came out of testing retrieval (~80 chunks, k=4):
   (`all-MiniLM-L6-v2`) is English-centric: Spanish questions only retrieve well against
   Spanish text.
 - **Add question-and-answer paragraphs** (`Question: … Answer: …`) for things people ask
-  directly. They match a question's wording far better than prose does: with them, a
-  24-question benchmark went from 15/18-style misses to 21/24 hits within the top 4 chunks
-  (23/24 with k=6), and Spanish questions in particular stopped missing.
+  directly. They match a question's wording far better than prose does, which matters most
+  for Spanish questions (the embedding model is English-centric). On a 24-question
+  benchmark the right chunk lands in the top 4 for 21 questions (23 with k=6); the
+  remaining misses were Spanish phrasings.
 - **Add overview paragraphs for cross-cutting questions** ("which project had the hardest
   deploy?", "what are all the demo links?"). Questions that span projects don't match any
   single project's sheet.
