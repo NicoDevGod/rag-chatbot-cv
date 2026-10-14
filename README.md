@@ -71,6 +71,15 @@ Writing tips that came out of testing retrieval (~80 chunks, k=4):
   deploy?", "what are all the demo links?"). Questions that span projects don't match any
   single project's sheet.
 
+## Memory: why embedding uses a tiny batch
+
+Indexing the knowledge base embeds every chunk at startup. With the library default
+(`batch_size=256`) that is one giant ONNX batch, and measured peak memory was **1064 MB for
+76 chunks** — far past Render's 512 MB, so the service was OOM-killed on every start right
+after downloading the embedding model (it only started to bite once the knowledge base grew
+from a handful of chunks to ~80). `EMBED_BATCH_SIZE = 2` with one thread brings the peak to
+**~340 MB** and startup still takes ~5 s. The peak now stays flat as more documents are added.
+
 ## Deploying to Render
 
 This repo includes a [`render.yaml`](render.yaml) Blueprint, so Render can configure

@@ -10,4 +10,6 @@ RAG chatbot, answering: For each question the retriever returns the top 4 chunks
 
 RAG chatbot, problems solved: (1) Memory: embeddings with sentence-transformers and PyTorch exceeded Render's 512 MB limit; switching to FastEmbed (ONNX Runtime) reduced memory from over 512 MB to about 330 MB. (2) The Groq model llama-3.1-8b-instant was retired, so Nicolas listed the available models through the API and moved to openai/gpt-oss-20b. (3) fastembed 0.4.2 did not exist; version 0.7.3 was used. (4) A numpy version conflict on Python 3.12 was fixed by pinning Python 3.10.13.
 
+RAG chatbot, indexing memory bug: When Nicolas expanded the knowledge base from a few chunks to about 80, the service started running out of memory on every start. The cause was the embedding library's default batch size of 256, which embedded everything in one giant batch: measured peak memory was 1064 MB for 76 chunks. Setting the batch size to 2 with one thread cut the peak to about 340 MB and startup still takes about 5 seconds.
+
 RAG chatbot, limits: It can only answer from the documents in its data folder, so questions outside them get an honest "I don't have that information". It runs on Render's free tier, which sleeps when idle, so the first request after a pause can take a minute or more.

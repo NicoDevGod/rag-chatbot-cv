@@ -14,6 +14,11 @@ load_dotenv()
 DATA_DIR = Path(__file__).parent / "data"
 GROQ_MODEL = "openai/gpt-oss-20b"
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+# Embedding the whole knowledge base in one big batch made memory spike far past
+# Render's 512MB (measured: 1064MB peak for 76 chunks at the library default of 256;
+# 341MB at 2). Small batches keep the peak flat as the knowledge base grows.
+EMBED_BATCH_SIZE = 2
+EMBED_THREADS = 1
 
 SYSTEM_PROMPT = (
     "You are a helpful assistant answering questions about Nicolas Alejandro Angel "
@@ -41,7 +46,11 @@ def build_vectorstore():
         )
     splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=100)
     chunks = splitter.split_documents(documents)
-    embeddings = FastEmbedEmbeddings(model_name=EMBEDDING_MODEL)
+    embeddings = FastEmbedEmbeddings(
+        model_name=EMBEDDING_MODEL,
+        batch_size=EMBED_BATCH_SIZE,
+        threads=EMBED_THREADS,
+    )
     return Chroma.from_documents(chunks, embeddings)
 
 
