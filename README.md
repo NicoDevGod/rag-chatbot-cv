@@ -41,6 +41,29 @@ New to RAG? [`docs/HOW_IT_WORKS.md`](docs/HOW_IT_WORKS.md) (in Spanish) walks th
 Drop `.md`, `.txt` or `.pdf` files into [`data/`](data/) — they're automatically loaded,
 chunked and embedded on startup. No code changes needed.
 
+### What's in the knowledge base
+
+| File | Contents |
+|---|---|
+| [`about-nicolas.md`](data/about-nicolas.md) | Bio, work experience, web projects, contact |
+| [`ai-projects-overview.md`](data/ai-projects-overview.md) | The six AI projects at a glance, all live-demo URLs, the hardest deploys |
+| `project-1…6-*.md` | One fact sheet per AI project: approach, numbers, bugs and fixes |
+| [`lessons-and-skills.md`](data/lessons-and-skills.md) | The 8 cross-cutting lessons and skills |
+| [`resumen-proyectos-ia-es.md`](data/resumen-proyectos-ia-es.md) | Spanish summary of the AI work, so Spanish questions retrieve well |
+
+Writing tips that came out of testing retrieval (38 chunks, k=4):
+
+- **Start every paragraph with the topic name** (e.g. `Waste classifier, data and results: …`).
+  Chunks are 800 characters and retrieved in isolation, so each one has to say what it's
+  about on its own.
+- **Keep paragraphs under ~750 characters** so the splitter doesn't cut them mid-fact.
+- **Write the facts in English, and add a short Spanish summary.** The embedding model
+  (`all-MiniLM-L6-v2`) is English-centric: Spanish questions only retrieve well against
+  Spanish text.
+- **Add overview paragraphs for cross-cutting questions** ("which project had the hardest
+  deploy?", "what are all the demo links?"). Questions that span projects don't match any
+  single project's sheet.
+
 ## Deploying to Render
 
 This repo includes a [`render.yaml`](render.yaml) Blueprint, so Render can configure
