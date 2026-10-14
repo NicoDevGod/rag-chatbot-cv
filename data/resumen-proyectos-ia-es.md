@@ -15,3 +15,15 @@ Proyecto 4, recomendador de películas: filtrado colaborativo con MovieLens usan
 Proyecto 5, detector de objetos: YOLOv8n (80 clases de COCO) exportado a ONNX, con preprocesamiento letterbox, decodificación de las 8.400 cajas candidatas y Non-Max Suppression escritos a mano en NumPy, sin torch en producción.
 
 Proyecto 6, fine-tuning con LoRA: distilgpt2 aprende estilo pirata entrenando solo el 0,98% de sus parámetros (adaptador de 3,2 MB). Para desplegarlo en 512 MB de RAM necesitó cuatro intentos: eliminó torch por completo y escribió a mano el loop de generación sobre onnxruntime (unos 283 MB al iniciar y unos 345 MB bajo uso).
+
+Qué estudió Nicolas (formación y estudios): es Técnico en electrónica, Analista programador (IP/CFT Santo Tomás Ovalle, 2019) e Ingeniero en informática (IP Santo Tomás La Serena, 2022). Tiene además un certificado en mantención computacional.
+
+Proyecto de título de Nicolas y autodidacta: su proyecto de título fue un sistema HelpDesk en ASP.Net y C# para recibir tickets internos sobre problemas en distintas áreas. Aprendió IA desde cero por cuenta propia, principalmente con YouTube, y también aprendió varios lenguajes y Arduino con C++.
+
+Experiencia laboral de Nicolas, dónde ha trabajado (trabajos más recientes): en 2025 fue ingeniero en informática en Uno Limitada (CableColor), dando soporte a servidores, routers y equipos, y manteniendo sistemas Apache y bases de datos. En 2024 fue desarrollador de software en ABTEC Chile: hizo el backend de una aplicación web con Python (FastAPI), usó pandas para procesar grandes volúmenes de datos, trabajó con PostgreSQL y ajustó código en React.
+
+Experiencia laboral de Nicolas, dónde ha trabajado (trabajos anteriores): en 2023 fue docente en IP/CFT Santo Tomás Ovalle (programación web, sistemas operativos Windows y Linux, bases de datos) y supervisó alumnos en práctica. En 2020 fue desarrollador en el Hospital de Ovalle (ASP.Net, macros VBA, PHP). En total tiene más de 5 años de experiencia como desarrollador de software.
+
+Habilidades e idiomas de Nicolas: Python 4 años, SQL 4, MySQL 4, GitHub 3, Git 3, C# 3, ASP.Net 2, React 2, PostgreSQL 1, MariaDB 1, Azure 1, Astro 1, Next.js 1 y Vite 1. Español nativo e inglés fluido. Habilidades blandas: proactividad, trabajo en equipo, pensamiento crítico, actitud positiva y apertura a críticas constructivas.
+
+Intereses, objetivos y personalidad de Nicolas: quiere cambiar su rumbo laboral y especializarse en inteligencia artificial. Le gusta trabajar en equipo. Juega fútbol amateur (6 contra 6) y le gustan los videojuegos, sobre todo los MMORPG. Se siente orgulloso del sistema HelpDesk como proyecto web y, como programador, de un script en Arduino (C++) que permitía usar un bastón con sensores de proximidad como ayuda para personas con problemas de visión. Le gustaría que un reclutador viera sus ganas de progresar.

@@ -8,14 +8,20 @@ Nicolas Alejandro Angel Robles is a Computer Engineer and a passionate, highly m
 ### Currently
 Developing full-stack projects for his portfolio. He is currently working on his potential for the development of digital solutions through the role of Front-End developer.
 
+### 2025: IT Engineer (Ingeniero en informática) - Uno Limitada (CableColor), Ovalle
+Provided support for IT equipment such as servers, routers, computers and printers. Also supported the local system that gives customer-service executives the information and tools they need: maintaining Apache systems, reviewing code and making database changes when necessary.
+
+### 2024: Software Developer - ABTEC Chile, Ovalle
+Built, together with the team, the backend of a web application in Python (FastAPI), using axios for the connection and pandas to process the large amounts of data that had to be loaded. Implemented the connections and queries needed to create part of the PostgreSQL database, and contributed to the frontend with code adjustments in React.
+
 ### May - December 2023: Computer teacher - IP/CFT Santo Tomas, Ovalle
-Worked as a teacher of some subjects within the computer area of the institute, including Web Programming, Operating Systems and Windows Operating Systems. Also did some assistantships for other subjects such as Object Oriented Programming.
+Worked as a teacher of some subjects within the computer area of the institute, including Web Programming, Operating Systems and Windows Operating Systems. Also did some assistantships for other subjects such as Object Oriented Programming. His subjects included Web Programming, Operating Systems (Windows and Linux) and Databases. He supervised several interns from both the Programmer Analyst and the Computer Engineering programs and evaluated several degree defenses (title defenses) for both programs.
 
 ### January - March 2023: Internship for Computer Engineering - Universidad Santo Tomas, La Serena
 Did his internship and graduation activity within the IT department of the establishment, performing computer support tasks as part of his internship. For his graduation activity he developed a HelpDesk system.
 
-### January - March 2021: Developer Full Stack - Hospital de Ovalle
-Before studying engineering, worked as a junior programmer at the Hospital de Ovalle, working on projects with different programming languages such as PHP, Visual Basic, and ASP.Net.
+### 2020: Software Developer - Hospital de Ovalle
+Before finishing his engineering degree, worked as a junior programmer at the Hospital de Ovalle, with languages such as PHP, Visual Basic and ASP.Net. Built an ASP.Net application for a doctor to capture requests, organize tasks and close them; built an Excel file with VBA macros to control the security of certain payroll lists; joined the team supporting the development of local PHP sites; and contributed ideas for charts with tools such as Power BI.
 
 ### June - August 2019: Internship for Programmer Analyst
 First encounter with the programming industry, working as a junior programmer within the company.
